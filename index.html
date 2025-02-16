@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Book Library</h1>
+        <form id="book-form">
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="text" id="book-author" placeholder="Author" required>
+            <input type="number" id="book-year" placeholder="Year Of Publication" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="library">
+            <h2>Library Collection</h2>
+            <ul id="book-list">
+                <li class="book-item">
+                    <span>
+                        <strong>The Great Gatsby</strong> by F. Scott Fitzgerald (1925)
+                    </span>
+                    <span class="unread">
+                        Unread
+                    </span>
+                    <button class="toggle-read" data-index="0">Toggle Read</button>
+                    <button class="delete-book" data-index="0">Delete</button>
+                </li>
+                <li class="book-item">
+                    <span>
+                        <strong>1984</strong> by George Orwell (1949)
+                    </span>
+                    <span class="read">
+                        Read
+                    </span>
+                    <button class="toggle-read" data-index="1">Toggle Read</button>
+                    <button class="delete-book" data-index="1">Delete</button>
+                </li>
+                <li class="book-item">
+                    <span>
+                        <strong>To Kill a MockingBird</strong> by Harper Lee (1960)
+                    </span>
+                    <span class="unread">
+                        Unread
+                    </span>
+                    <button class="toggle-read" data-index="2">Toggle Read</button>
+                    <button class="delete-book" data-index="2">Delete</button>
+                </li>
+                <li class="book-item">
+                    <span>
+                        <strong>Moby-Dick</strong> by Herman Melville (1851)
+                    </span>
+                    <span class="read">
+                        Read
+                    </span>
+                    <button class="toggle-read" data-index="3">Toggle Read</button>
+                    <button class="delete-book" data-index="3">Delete</button>
+                </li>
+                <li class="book-item">
+                    <span>
+                        <strong>Pride and Prejudice</strong> by Jane Austen (1813)
+                    </span>
+                    <span class="unread">
+                        Unread
+                    </span>
+                    <button class="toggle-read" data-index="4">Toggle Read</button>
+                    <button class="delete-book" data-index="4">Delete</button>
+                </li>
+                <li class="book-item">
+                    <span>
+                        <strong>War and Peace</strong> by Leo Tolstoy (1869)
+                    </span>
+                    <span class="read">
+                        Read
+                    </span>
+                    <button class="toggle-read" data-index="5">Toggle Read</button>
+                    <button class="delete-book" data-index="5">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
